@@ -1,0 +1,74 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f2e6;
+    overflow: hidden;
+}
+
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.bg-mosque {
+    background: url('image/mose.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.posecard {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 5px solid #d4af37; /* Gold border */
+    max-width: 600px;
+    width: 100%;
+    color: #155724; /* Green text */
+}
+
+.eid-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.eid-message {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.family-photo-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 3px solid #d4af37;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.family-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .eid-title {
+        font-size: 2rem;
+    }
+
+    .eid-message {
+        font-size: 1rem;
+    }
+
+    .posecard {
+        padding: 2rem 1rem;
+    }
+}
